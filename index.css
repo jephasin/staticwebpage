@@ -70,6 +70,7 @@
 body {
     display: flex;
     flex-direction: column;
+    position: absolute;
 }
 
 .sunny {
@@ -321,7 +322,7 @@ body {
     margin: 0px;
     padding: 0px;
     border: 0px;
-    width: 417.5px;
+    width: 333px;
     min-width: 100%;
     min-height: 100%;
 } 
