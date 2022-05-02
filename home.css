@@ -2,11 +2,15 @@
     box-sizing: border-box;
 }
 
+html, body {
+    width: 100vw;
+}
+
 body {
     display: flex;
     flex-direction: column;
-    background-color: hsl(0, 0%, 100%);;
-    max-width: 100%;
+    background-color: hsl(0, 0%, 100%);
+    width: ;
     overflow-x: hidden;
     font-family: 'Fraunces';
     font-size: 18px;
@@ -19,7 +23,6 @@ body {
 }
 
 .sunny {
-    font-size: 18px;
     font-weight: 600;
     font-family: 'Barlow';
 }
@@ -87,7 +90,6 @@ body {
     align-items: center;
     height: 100%;
     background-color: hsl(197, 93%, 59%);
-    width: 100%;
     margin: 0px;
     font-family: 'Barlow';
     font-weight: 600;
@@ -103,7 +105,7 @@ body {
     align-items: center;
     padding: 4rem 2rem;
     background-color: hsl(0, 0%, 100%);;
-    width: 90vw;
+    width: 100%;
 }
 
 .row-1 {
