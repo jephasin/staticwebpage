@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html, body {
@@ -10,10 +12,9 @@ body {
     display: flex;
     flex-direction: column;
     background-color: hsl(0, 0%, 100%);
-    width: ;
     overflow-x: hidden;
     font-family: 'Fraunces';
-    font-size: 18px;
+    font-size: 16px;
     margin: 0px;
 }
 
@@ -29,11 +30,11 @@ body {
 
 .toggle-collapse {
     float: right;
-    width: 45px;
+    width: 50px;
     height: 32px;
-    margin: 0.4em 0.3em;
+    margin: 0;
+    padding: 0;
     background-color: transparent;
-    border-radius: 5px;
     cursor: pointer;
     border: 0vh;
 }
@@ -46,6 +47,7 @@ body {
 .toggle-collapse i img {
     color: hsl(0, 0%, 100%);
     filter: grayscale(1) invert(1);
+    margin-left: 1rem;
 }
 
 .toggle-collapse:hover {
@@ -58,7 +60,6 @@ body {
     text-align: center;
     float: none;
     height: 0vh;
-    transition: all 499ms ease;
 }
 
 #nav {
@@ -86,7 +87,7 @@ body {
 
 .header {
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: 100%;
     background-color: hsl(197, 93%, 59%);
@@ -103,9 +104,10 @@ body {
     grid-template-rows: auto auto auto auto;
     gap: 3em;
     align-items: center;
-    padding: 4rem 2rem;
+    padding: 3rem 2rem;
     background-color: hsl(0, 0%, 100%);;
-    width: 100%;
+    width: 90%;
+    margin-top: 1rem;
 }
 
 .row-1 {
@@ -121,7 +123,7 @@ body {
 
 .main-content .h1 {
     text-align: center;
-    letter-spacing: 0.5em;
+    letter-spacing: 0.3em;
     padding: 6rem 0 0 1rem;
     color: hsl(0, 0%, 100%);
     margin: 0;
@@ -179,18 +181,20 @@ body {
     align-content: center;
     margin-right: 0.5rem;
     margin-left: 0rem;
-    padding: 0rem 5rem 0rem 5rem;
+    padding: 0rem 1.5rem 0rem 1.5rem;
     text-align: center;
 }
 
 .col-2-1 p, .col-3-1 p, .col-4-1 p, .col-4-2 p {
     font-family: 'Barlow';
     font-weight: 600;
+    font-size: 18px;
+    padding: 1.5rem 0 0 0;
 }
 
 .col-2-1 h5, .col-3-1 h5 {
     margin: 0;
-    padding: 0;
+    padding: 1.5rem 0 0 0;
     border-bottom: 4px;
     border-bottom-style: inset;
     border-color: hsl(7, 99%, 70%);
@@ -203,16 +207,8 @@ body {
     background-position: center center;
     height: 100vh;
     text-align: center;
-}
-
-.col-4-1 {
     color: hsl(167, 40%, 24%);
-    padding: 18rem 4rem 0px 3rem;
-}
-
-.col-4-2 {
-    color: hsl(198, 62%, 26%);
-    padding: 18rem 4rem 0px 3rem;
+    padding: 20rem 1rem 0px 0.5rem;
 }
 
 .col-4-2 {
@@ -222,6 +218,8 @@ body {
     background-position: center center;
     height: 100vh;
     text-align: center;
+    color: hsl(198, 62%, 26%);
+    padding: 20rem 1rem 0px 0.5rem;
 }
 
 .col-6 {
