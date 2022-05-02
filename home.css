@@ -182,7 +182,6 @@ body {
     margin-left: 0rem;
     padding: 0rem 5rem 0rem 5rem;
     text-align: center;
-    border-style: solid;
 }
 
 .col-2-1 p, .col-3-1 p, .col-4-1 p, .col-4-2 p {
@@ -209,13 +208,11 @@ body {
 
 .col-4-1 {
     color: hsl(167, 40%, 24%);
-    border-style: solid;
     padding: 24rem 4rem 0px 3rem;
 }
 
 .col-4-2 {
     color: hsl(198, 62%, 26%);
-    border-style: solid;
     padding: 24rem 4rem 0px 3rem;
 }
 
@@ -396,7 +393,7 @@ body {
     background-image: url("images/image-transform.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    width: 50%;
+    width: 50vw;
     height: auto;
 }
 
@@ -410,7 +407,7 @@ body {
 
 
 .col-2-1 {
-    width: 50%;
+    width: 50vw;
     max-width: fit-content;
     margin: 0;
     padding: 0 7rem;
@@ -504,7 +501,6 @@ body {
 .col-6 {
     height: auto;
     height: 100vh;
-    border-style: solid;
     padding: 3rem 0 0 0;
 }
 
@@ -514,7 +510,6 @@ body {
     gap: 1rem;
     padding: 1rem 3rem 0rem 3rem;
     justify-content: space-evenly;
-    border-style: solid;
     margin-right: 1rem;
 }
 
