@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -14,7 +15,7 @@ body {
     background-color: hsl(0, 0%, 100%);
     overflow-x: hidden;
     font-family: 'Fraunces';
-    font-size: 16px;
+    font-size: 14px;
     margin: 0px;
 }
 
@@ -145,6 +146,7 @@ body {
     padding: 1rem 1.2rem;
 }
 
+
 .img-transform {
     background-image: url("images/image-transform.jpg");
     background-size: cover;
@@ -192,12 +194,28 @@ body {
     padding: 1.5rem 0 0 0;
 }
 
-.col-2-1 h5, .col-3-1 h5 {
+.col-3-1 h5 {
     margin: 0;
     padding: 1.5rem 0 0 0;
     border-bottom: 4px;
     border-bottom-style: inset;
+    border-color: hsl(7, 99%, 87%);
+}
+
+.col-3-1 h5:hover {
     border-color: hsl(7, 99%, 70%);
+}
+
+.col-2-1 h5:hover {
+    border-color: hsl(51, 100%, 49%);
+}
+
+.col-2-1 h5 {
+    margin: 0;
+    padding: 1.5rem 0 0 0;
+    border-bottom: 4px;
+    border-bottom-style: inset;
+    border-color: hsl(51, 100%, 72%);
 }
 
 .col-4-1 {
@@ -205,10 +223,10 @@ body {
     width: 100%;
     background-size: cover;
     background-position: center center;
-    height: 100%;
+    height: 100vh;
     text-align: center;
     color: hsl(167, 40%, 24%);
-    padding: 80% 1rem 5% 1rem;
+    padding: 90% 1rem 0px 0.5rem;
 }
 
 .col-4-2 {
@@ -216,10 +234,10 @@ body {
     width: 100%;
     background-size: cover;
     background-position: center center;
-    height: 100%;
+    height: 100vh;
     text-align: center;
     color: hsl(198, 62%, 26%);
-    padding: 80% 1rem 5% 1rem;
+    padding: 90% 1rem 0px 0.5rem;
 }
 
 .col-6 {
@@ -316,8 +334,9 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 100px;
+    height: 100%;
     background-color: hsl(197, 93%, 59%);
+    align-items: center;
     width: 100vw;
     margin: 0px;
     font-family: 'Barlow';
@@ -338,12 +357,11 @@ body {
     display: grid;
     justify-content: right;
     grid-template-columns: auto auto auto auto;
-    gap: 1em;
+    gap: 25px;
     align-items: center;
     margin-right: 50px;
-    border-style: none;
     background-color: transparent;
-    padding: 0;
+    padding: 0 5px;
 }
 
 .sunny, .nav-item {
@@ -354,21 +372,36 @@ body {
     font-weight: 600;
     font-family: 'Barlow';
     padding: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 4.5%;
+    margin-left: 2%;
 }
 
 .navbar li .nav-item {
-    padding: 0.3rem 0.8rem;
+    padding: 5px 5px;
+    border-radius: 22px;
+    border: 10px solid transparent;
+    transform: scale(5);
 }
 
 .navbar li .nav-item:hover {
     color: black;
     background-color: hsl(0, 0%, 100%);
-    border-style: solid;
-    border-color: hsl(0, 0%, 100%);
+    border: 10px solid hsl(0, 0%, 100%);
     border-radius: 22px;
+    margin: 0;
+    padding: 5px 5px;
+    text-transform: inherit;
+    
+}
+
+.navbar li .nav-item::before {
+    border-radius: 22px;
+    margin: 0;
+    padding: 5px 5px;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
     text-transform: uppercase;
-    padding: 0.3rem 0.8rem;
 }
 
 .row-1 {
@@ -407,8 +440,8 @@ body {
 .col-2-1 {
     width: 50vw;
     max-width: fit-content;
-    margin: 0;
-    padding: 0 7.5rem;
+    margin: auto;
+    padding: 0 6%;
 }
 
 .col-2-1 h1, .col-2-1 p, .col-2-1 h5, .col-3-1 h1, .col-3-1 p, .col-3-1 h5 {
@@ -417,16 +450,12 @@ body {
 }
 
 .col-2-1 h1, .col-3-1 h1 {
-    padding: 0 5rem 0 0;
+    padding: 0 30% 0 0;
     text-align: left;
 }
 
-.col-2-1 h5 {
-    margin-right: 21rem;
-}
-
-.col-3-1 h5 {
-    margin-right: 25rem;
+.col-2-1 h5, .col-3-1 h5 {
+    margin-right: 81%;
 }
 
 .col-2-1 p, .col-2-1 h5, .col-3-1 p, .col-3-1 h5 {
@@ -448,7 +477,7 @@ body {
 .col-3-1 {
     width: 50vw;
     max-width: auto;
-    padding: 0 5rem;
+    padding: 0 6%;
     margin: 0;
 }
 
