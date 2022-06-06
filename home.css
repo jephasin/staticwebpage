@@ -190,8 +190,12 @@ body {
 .col-2-1 p, .col-3-1 p, .col-4-1 p, .col-4-2 p {
     font-family: 'Barlow';
     font-weight: 600;
-    font-size: 18px;
+    font-size: 16px;
     padding: 1.5rem 0 0 0;
+}
+
+.col-2-1 p, .col-3-1 p {
+    opacity: 0.5;
 }
 
 .col-3-1 h5 {
@@ -223,10 +227,10 @@ body {
     width: 100%;
     background-size: cover;
     background-position: center center;
-    height: 100%;
+    height: 100vh;
     text-align: center;
     color: hsl(167, 40%, 24%);
-    padding: 80% 1rem 0px 5%;
+    padding: 70vh 5% 0 5%;
 }
 
 .col-4-2 {
@@ -234,10 +238,10 @@ body {
     width: 100%;
     background-size: cover;
     background-position: center center;
-    height: 100%;
+    height: 100vh;
     text-align: center;
     color: hsl(198, 62%, 26%);
-    padding: 80% 1rem 0px 5%;
+    padding: 70vh 5% 0 5%;
 }
 
 .col-6 {
@@ -250,7 +254,7 @@ body {
 }
 
 .col-6-p {
-    letter-spacing: 0.4em;
+    letter-spacing: 0.2em;
     font-weight: 900;
 }
 
@@ -258,7 +262,17 @@ body {
     padding: 2rem 2rem 1rem 2rem;
     display: grid;
     grid-template-rows: auto auto auto;
-    gap: 5rem;
+    justify-content: space-evenly;
+    gap: 4rem;
+    margin-top: 2rem;
+}
+
+.col-6-1-1 img, .col-6-2-1 img, .col-6-3-1 img {
+    margin-bottom: 10%;
+}
+
+.col-6-1-1 p, .col-6-2-1 p, .col-6-3-1 p {
+    margin-bottom: 10%;
 }
 
 .col-5 {
@@ -293,10 +307,10 @@ footer {
 .col-7-1 {
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 4rem;
+    gap: 25%;
     justify-content: center;
     margin: 0;
-    padding: 10px 0;
+    padding: 10px 5px;
 }
 
 .col-8 {
@@ -390,16 +404,7 @@ body {
     border-radius: 22px;
     margin: 0;
     padding: 5px 5px;
-}
-
-.navbar li .nav-item::before {
-    border-radius: 22px;
-    background-color: hsl(0, 0%, 100%);
-    border: 10px solid hsl(0, 0%, 100%);
-    margin: 0;
-    padding: 5px 5px;
-    height: 0;
-    text-transform: uppercase;
+    text-transform: none;
 }
 
 .row-1 {
@@ -439,7 +444,7 @@ body {
     width: 50vw;
     max-width: fit-content;
     margin: auto;
-    padding: 0 6%;
+    padding: 0 10.5%;
 }
 
 .col-2-1 h1, .col-2-1 p, .col-2-1 h5, .col-3-1 h1, .col-3-1 p, .col-3-1 h5 {
@@ -448,12 +453,12 @@ body {
 }
 
 .col-2-1 h1, .col-3-1 h1 {
-    padding: 0 30% 0 0;
+    padding: 0 5% 0 0;
     text-align: left;
 }
 
 .col-2-1 h5, .col-3-1 h5 {
-    margin-right: 81%;
+    margin-right: 76%;
 }
 
 .col-2-1 p, .col-2-1 h5, .col-3-1 p, .col-3-1 h5 {
@@ -475,7 +480,7 @@ body {
 .col-3-1 {
     width: 50vw;
     max-width: auto;
-    padding: 0 6%;
+    padding: 0 10.5%;
     margin: 0;
 }
 
@@ -497,7 +502,7 @@ body {
     background-size: cover;
     background-position: center center;
     height: auto;
-    padding: 21rem 8rem 3rem 8rem ;
+    padding: 21rem 12rem 3rem 12rem ;
     text-align: center;
     max-width: auto;
 }
@@ -508,7 +513,7 @@ body {
     width: 50vw;
     background-size: cover;
     height: auto;
-    padding: 21rem 9rem 3rem 9rem;
+    padding: 21rem 12rem 3rem 12rem;
     text-align: center;
     max-width: auto;
 }
@@ -538,8 +543,8 @@ body {
 .col-6-0 {
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 1rem;
-    padding: 1rem 3rem 0rem 3rem;
+    gap: 2rem;
+    padding: 1rem 6rem 0rem 6rem;
     justify-content: space-evenly;
     margin-right: 1rem;
     margin-top: 3rem;
@@ -565,7 +570,6 @@ body {
 }
 
 .col-5-child {
-
     height: auto;
     margin: 0px;
     padding: 0px;
