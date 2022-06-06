@@ -230,7 +230,7 @@ body {
     height: 100vh;
     text-align: center;
     color: hsl(167, 40%, 24%);
-    padding: 95% 5% 0 5%;
+    padding: 70vh 5% 0 5%;
 }
 
 .col-4-2 {
@@ -241,7 +241,7 @@ body {
     height: 100vh;
     text-align: center;
     color: hsl(198, 62%, 26%);
-    padding: 95% 5% 0 5%;
+    padding: 70vh 5% 0 5%;
 }
 
 .col-6 {
