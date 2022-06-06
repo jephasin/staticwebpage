@@ -223,10 +223,10 @@ body {
     width: 100%;
     background-size: cover;
     background-position: center center;
-    height: 100vh;
+    height: 100%;
     text-align: center;
     color: hsl(167, 40%, 24%);
-    padding: 90% 1rem 0px 0.5rem;
+    padding: 80% 1rem 0px 5%;
 }
 
 .col-4-2 {
@@ -234,10 +234,10 @@ body {
     width: 100%;
     background-size: cover;
     background-position: center center;
-    height: 100vh;
+    height: 100%;
     text-align: center;
     color: hsl(198, 62%, 26%);
-    padding: 90% 1rem 0px 0.5rem;
+    padding: 80% 1rem 0px 5%;
 }
 
 .col-6 {
@@ -390,17 +390,15 @@ body {
     border-radius: 22px;
     margin: 0;
     padding: 5px 5px;
-    text-transform: inherit;
-    
 }
 
 .navbar li .nav-item::before {
     border-radius: 22px;
+    background-color: hsl(0, 0%, 100%);
+    border: 10px solid hsl(0, 0%, 100%);
     margin: 0;
     padding: 5px 5px;
     height: 0;
-    overflow: hidden;
-    visibility: hidden;
     text-transform: uppercase;
 }
 
